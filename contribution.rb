@@ -52,7 +52,7 @@ module Contribution
   def self.read_file(file)
     puts "No contributions added yet!" if File.zero?(file)
 
-    open(file).each_with_index do |line|
+    open(file).each do |line|
       print "#{line}"
     end
   end
